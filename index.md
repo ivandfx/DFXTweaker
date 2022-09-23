@@ -3,7 +3,7 @@
 |**Versión más reciente**|v1.2|
 |**Fecha de lanzamiento**|22/09/2022|
 
-![]([https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Na2_8oLHtylBwKR_cnzjPMsScU5Eo507P0_Ha8GkRpHazwojd0JP7aNKk540QRGo4t080_YhlTPNOJr_WHuKS5D47Uto0-4rW7DY-SVyGEcDTf2KWkt0BQYnJZNb-0wdn0m_9v6kCmiAfz-DJ6hdiyP2GGc4efaCyJe5sfTeVeuF4N1q1y4Uo-LoBA/s979/tweaker1.2.png)
+![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Na2_8oLHtylBwKR_cnzjPMsScU5Eo507P0_Ha8GkRpHazwojd0JP7aNKk540QRGo4t080_YhlTPNOJr_WHuKS5D47Uto0-4rW7DY-SVyGEcDTf2KWkt0BQYnJZNb-0wdn0m_9v6kCmiAfz-DJ6hdiyP2GGc4efaCyJe5sfTeVeuF4N1q1y4Uo-LoBA/s979/tweaker1.2.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaPSeSgIUhfKE637odi8lcPapHkzbuk_NzrWRs9XdRzhrRoIJ0WZUvVwsH1O6_zFtyNJsJUJD09BoDP7ERMgrtFBA56jPM_Vs-3XqufUCvsyMY_BGI5dUd2zF0KlbU5xI3ZEn9ZAoHbB_N2U76mswMJ8axikjUzBekAwB0A36ozion7kxLHpbAPksaXA/s979/tweaker1.2.png)
 Menú de DFX Tweaker en la versión 1.2
 
 ### ¿Qué es DFX Tweaker?
