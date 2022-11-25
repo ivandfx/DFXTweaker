@@ -7,27 +7,22 @@
 <meta name="author" content="ivandfx">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="application-name" content="DFX Tweaker">
-<meta name="msapplication-square70x70logo" content=""><!DOCTYPE html>
-
-<head profile="http://www.w3.org/2005/10/profile">
-<meta charset='utf-8'>
-<meta name="description" content="DFX Tweaker: Tweak your OS">
-<meta name="author" content="ivandfx">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="application-name" content="DFX Tweaker">
-<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
-<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
+<meta name="msapplication-square70x70logo" content="">
+<meta name="msapplication-square150x150logo" content="">
+<meta name="msapplication-wide310x150logo" content="">
+<meta name="msapplication-square310x310logo" content="">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>DFX Tweaker - Tweak your OS</title>
+<title>DFX Tweaker Web Alpha</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script>
+
 </script>
 <style type="text/css">
 	:root {
 		--bs-body-line-height: 1.2;
 	}
 	body {
-		background-color: #3f4555;
+		background-color: #181818;
 		font-family: Helvetica, Arial, FreeSans, san-serif !important;
 		color: #ffffff;
 	}
@@ -119,7 +114,7 @@
 		line-height:10px;
 		color:#555;
 		vertical-align:middle;
-		background-color:#fcfcfc;
+		background-color:#848482;
 		border:solid 1px #ccc;
 		border-bottom-color:#bbb;
 		border-radius:3px;
@@ -141,35 +136,24 @@
 	}
 </style>
 </head>
-	</script>
-	<hr style="width:728px;">
-	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
-	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline"><center>Tweak your OS</center></div>
+
+ 	<hr style="width:728px;">
+	<h1><img border="0" src="" srcset=" 1x, " alt=""/>
+	<a target="_blank" href="https://github.com/ivandfx/DFXTweaker">DFX Tweaker</a></h1>
+	<div class="tagline"><center>Tweak your Windows install easily</center></div>
+	<p>This website is still in early development, so be chill about it.</p>
 	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="/pics/screenshot1_en.png" class="d-block" alt="Rufus screenshot 1" style="height: 600px; margin: auto;">
+				<img src="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/1.10.2language.png" class="d-block" alt="Language selection menu" style="height: 600px; margin: auto;">
 			</div>
 			<div class="carousel-item">
-				<img src="/pics/screenshot2_en.png" class="d-block" alt="Rufus screenshot 2" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot3_en.png" class="d-block" alt="Rufus screenshot 3" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot4_en.png" class="d-block" alt="Rufus screenshot 4" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot5_en.png" class="d-block" alt="Rufus screenshot 5" style="height: 600px; margin: auto;">
+				<img src="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/1.10.2en.png" class="d-block" alt="English main menu 1.10.2" style="height: 600px; margin: auto;">
 			</div>
 		</div>
 		<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -181,97 +165,21 @@
 		</button>
 	</div>
 	<p>&nbsp;</p>
-	<p>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
-	<p>It can be especially useful for cases where:</p>
-	<ul>
-		<li>you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)</li>
-		<li>you need to work on a system that doesn't have an OS installed</li>
-		<li>you need to flash a BIOS or other firmware from DOS</li>
-		<li>you want to run a low-level utility</li>
-	</ul>
-	<p>Despite its small size, Rufus provides everything you need!</p>
-	<p>Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> or <a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs. <a href="#ref1"><sup>(1)</sup></a><br/>
-	A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page. <a href="#ref2"><sup>(2)</sup></a></p>
-		<a name="download"></a>
+	<p>DFX Tweaker is a small but versatile tool designed to get system information and tweak your OS beyond what Microsoft allows you. As development progresses, new features will be added..</p>		
+ 	<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Download</span></h2>
-		<p><b>Last updated 2022.08.03:</b></p>
-		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20.exe">Rufus 3.20</a></b></span> <span dir="ltr">(1.3 MB)</span></li>
-		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20p.exe">Rufus 3.20 Portable</a> <span dir="ltr">(1.3 MB)</span></li>
-		<li><a href="/downloads/">Other versions (GitHub)</a></li>
-		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Other versions (FossHub)</a></li>
+		<p><b>Last updated November 24, 2022:</b></p>
+		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/ivandfx/DFXTweaker/releases/download/1.10.2/DFXTweaker1.10.2.vbs">DFX Tweaker 1.10.2</a></b></span></li>
+		<li><a href="https://github.com/ivandfx/DFXTweaker/releases">Older releases</a></li>
 		</ul>
-	<h4>Supported Languages:</h4>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
-		<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
-		<td><i>Български</i></td><td>,&nbsp;</td>
-		<td><i>Čeština</i></td><td>,&nbsp;</td>
-		<td><i>Dansk</i></td><td>,&nbsp;</td>
-		<td><i>Deutsch</i></td><td>,&nbsp;</td>
-		<td><i>Ελληνικά</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>English</i></td><td>,&nbsp;</td>
-		<td><i>Español</i></td><td>,&nbsp;</td>
-		<td><i>Français</i></td><td>,&nbsp;</td>
-		<td><i>Hrvatski</i></td><td>,&nbsp;</td>
-		<td><i>Italiano</i></td><td>,&nbsp;</td>
-		<td><i>Latviešu</i></td><td>,&nbsp;</td>
-		<td><i>Lietuvių</i></td><td>,&nbsp;</td>
-		<td><i>Magyar</i></td><td>,&nbsp;</td>
-		<td><i>Nederlands</i></td><td>,&nbsp;</td>
-		<td><i>Norsk</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Polski</i></td><td>,&nbsp;</td>
-		<td><i>Português</i></td><td>,&nbsp;</td>
-		<td><i>Português do Brasil</i></td><td>,&nbsp;</td>
-		<td><i>Русский</i></td><td>,&nbsp;</td>
-		<td><i>Română</i></td><td>,&nbsp;</td>
-		<td><i>Slovensky</i></td><td>,&nbsp;</td>
-		<td><i>Slovenščina</i></td><td>,&nbsp;</td>
-		<td><i>Srpski</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Suomi</i></td><td>,&nbsp;</td>
-		<td><i>Svenska</i></td><td>,&nbsp;</td>
-		<td><i>Tiếng&nbsp;Việt</i></td><td>,&nbsp;</td>
-		<td><i>Türkçe</i></td><td>,&nbsp;</td>
-		<td><i>Українська</i></td><td>,&nbsp;</td>
-		<td>简体中文</td><td>,&nbsp;</td>
-		<td>正體中文</td><td>,&nbsp;</td>
-		<td>日本語</td><td>,&nbsp;</td>
-		<td>한국어</td><td>,&nbsp;</td>
-		<td>ไทย</td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>עברית</td><td>,&nbsp;</td>
-		<td>العربية</td><td>,&nbsp;</td>
-		<td>پارسی</td><td>.</td>
-	</tr></table>
+
 	<h4>System Requirements:</h4>
-	<p>Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.</p>
-	<p>I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!</p>
+	<p>Windows 10 1507 or newer. Windows 11 21H2 or newer. 32bit and 64bit are supported.</p>
+	<p>Recommended Windows 10 1809 or newer.</p>
 	<h2>Usage</h2>
-	<p>Download the executable and run it &ndash; no installation is necessary.</p>
-	<p>The executable is digitally signed and the signature should state:</p>
+	<p>Download any release and run it, no installation required.</p>
 	<ul>
-		<li><i>"Akeo Consulting"</i> (v1.3.0 or later)</li>
-		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 or earlier)</li>
-	</ul>
-	<h4>Notes on DOS support:</h4>
-	<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target="_blank" href="http://www.freedos.org">FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts.</p>
-	<h4>Notes on ISO Support:</h4>
-	<p>All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
-	<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="http://cdburnerxp.se/">CDBurnerXP</a>.</p>
-	<a name="FAQ"></a>
-	<h2>Frequently Asked Questions (FAQ)</h2>
-	<p>A Rufus FAQ is available <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">HERE</a></b>.<br/></p>
-	<p>To provide feedback, report a bug or request an enhancement, please use the GitHub <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
-	<a name="license"></a>
-	<h2>License</h2>
-	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> or later.<br />You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.</p>
-	<p>Rufus is produced in a 100% transparent manner, from its <a target="_blank" href="https://github.com/pbatard/rufus">public source</a>, using a <a target="_blank" href="http://mingw-w64.org">MinGW32</a> environment.</p>
-	<a name="changelog"></a>
-	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2022&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-				USB icon by PC Unleashed<br/>
+		
 		Hosting by <a target="_blank" href="https://pages.github.com/">GitHub</a>
 		</div>  
 	</div>
