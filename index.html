@@ -1,66 +1,160 @@
  <!DOCTYPE html>
-<html>
-<head>
-  <title>DFX Tweaker Web</title>
-</head>
-<style>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="/css/retina.css"
-    media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)"
-/>
-  
-  a{
-  color: red;
-}
 
-a:hover{
-  color: red;
-}
+<html lang="en-IE" dir="ltr">
+<head profile="http://www.w3.org/2005/10/profile">
+<meta charset='utf-8'>
+<meta name="description" content="DFX Tweaker: Tweak your Windows install easily">
+<meta name="keywords" content="">
+<meta name="author" content="ivandfx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="application-name" content="DFX Tweaker">
+<meta name="msapplication-square70x70logo" content="">
+<meta name="msapplication-square150x150logo" content="">
+<meta name="msapplication-wide310x150logo" content="">
+<meta name="msapplication-square310x310logo" content="">
+<meta name="msapplication-TileColor" content="#3f4555">
+<title>DFX Tweaker Web Alpha</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script>
 
-a:active{
-  color: red;
-}
-
-body {
-  background: #666666;
-  color: #ffffff;
-  height: 100vh;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-
-span:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: attr(filter-content);
-
-  filter: url(#motion-blur-filter);
-}
-
-
-svg {
-  display: none;
-}
-div.container {
-background-color:#666666;
-}
-div.container p {
-text-align: center;
-font-size: 32px;
-font-style: normal;
-color: #FFFF8A;
-background-color: #666666;
-}
-div.container p {
+</script>
+<style type="text/css">
+	:root {
+		--bs-body-line-height: 1.2;
+	}
+	body {
+		background-color: #3f4555;
+		font-family: Helvetica, Arial, FreeSans, san-serif !important;
+		color: #ffffff;
+	}
+	#right_column {
+		float: right;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-right: 10px;
+		width: 250px;
+		font-size: 0.8em;
+	}
+	#container {
+		margin: 0 auto;
+		width: 735px;
+		overflow: auto;
+	}
+	#notice {
+		border:4px solid #ffa520;
+		color:#ffffff;
+		padding:1em;
+		width:94%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#cookie-statement {
+		background-color: #5a5a5a;
+		border: none;
+		border-radius: 0;
+		color: #fff;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		margin: -8px -8px;
+		padding: 5px 0px 5px 15px;
+		position: relative;
+		width: 100%;
+		z-index: 999;
+	}
+	#cookie-statement a {
+		background-color: #303030;
+		border: 1px solid rgba(0,0,0,.1);
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		color: #fff;
+		cursor: pointer;
+		line-height: 200%;
+		padding: 4px 8px;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	table.reference {
+		color: #000030;
+		background-color:#ffffff;
+		border:1px solid #c3c3c3;
+		border-collapse:collapse;
+		width:100%;
+	}
+	table.reference th {
+		background-color:#e5eecc;
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
+	}
+	table.reference td {
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
+	}
+	li { line-height: 1.3em; }
+	h1, h2, h3, h4 { font-weight: bold; }
+	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px; }
+	h1 .small { font-size: 0.4em; }
+	h1 a { text-decoration: none }
+	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a; margin-top: 40px; margin-bottom: 20px; }
+	h3 { text-align: center; color: #c0baaa; }
+	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
+	a { color: #c0baaa; }
+	.cookie-notification { background: #fffbe4; border-color: #f8f6e6; overflow: hidden; }
+	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
+	.download { float: right; }
+	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
+	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
+	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+	.kbd{
+		display:inline-block;
+		padding:3px 5px;
+		font-family:monospace, monospace;
+		font-size:11px;
+		line-height:10px;
+		color:#555;
+		vertical-align:middle;
+		background-color:#fcfcfc;
+		border:solid 1px #ccc;
+		border-bottom-color:#bbb;
+		border-radius:3px;
+		box-shadow:inset 0 -1px 0 #bbb;
+	}
+	.footer { font-size: 0.9em; text-align:center; padding-top: 30px; font-style: italic; }
+	.treeView{ -moz-user-select: none; position: relative; }
+	.treeView ul { margin: 0 0 0 -1.5em; padding: 0 0 0 1.5em; }
+	.treeView li { margin: 0; padding: 0; list-style-position: inside; list-style-image: none; cursor: auto; }
+	.treeView li li { padding-left: 1.5em; }
+	@media screen and ( max-width: 1002px; ) {
+		.hide_on_small_screens { display: none; }
+	}
+	.carousel-indicators { bottom: -45px; }
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+	}
 </style>
-<div class="container">
-<p>DFX Tweaker Web Alpha</p>
-<p>Created by <a href="https://github.com/ivandfx" target="_blank">ivandfx</a><br /></p> 
-<p>  
-<p> 
-<p><a href="https://github.com/ivandfx/DFXTweaker/releases/download/1.10.2/DFXTweaker1.10.2.vbs" target="_blank">Download latest release</a><br /></p> 
+</head>
+
+ 	<hr style="width:728px;">
+	<h1><img border="0" src="" srcset=" 1x, " alt="[DFX Tweaker icon]"/>
+	<a target="_blank" href="https://github.com/ivandfx/DFXTweaker">DFX Tweaker</a></h1>
+	<div class="tagline"><center>Tweak your Windows install easily</center></div>
+	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/images/1.10.2language.png" class="d-block" alt="Language selection menu" style="height: 600px; margin: auto;">
+			</div>
+			<div class="carousel-item">
+				<img src="/images/1.10.2en.png" class="d-block" alt="English main menu 1.10.2" style="height: 600px; margin: auto;">
+			</div>
+		</div>
+		<div class="carousel-indicators">
+ 
+		Hosting by <a target="_blank" href="https://pages.github.com/">GitHub</a>
+		</div>  
+	</div>
+</body>
+</html>
