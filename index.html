@@ -111,35 +111,92 @@
 </style>
 </head>
 <div id="container">
-	<hr style="width:0px;">
-	<hr style="width:0px;">
-	<h1><img border="0" src="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/dfxicon128.png" srcset="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/dfxicon128.png 1x, https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/dfxicon256.png 2x"/>
-	<a target="_blank" href="https://github.com/ivandfx/DFXTweaker">DFX Tweaker</a></h1>
-	<div class="tagline">Tweak your existing OS easily</div>
-	<hr style="width:0px;">
-	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="images/1.10.3language.png" class="d-block" alt="Language selection menu" style="height: 380px; margin: auto;">
-					<p><center>DFX Tweaker Start Menu 1.10.3</center></p>
-			</div>
-			<div class="carousel-item">
-				<img src="/images/dfxlegacy1.11.0.png" class="d-block" alt="English main menu 1.10.2" style="height: 380px; margin: auto;">
-					<p><center>DFX Tweaker Minimal Menu on Windows 8.1</center></p>
-			</div>
-		</div>
-		<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/1.10.3language.png" style="width:100%">
+  <div class="text">DFX Tweaker 1.10.3 Start Menu</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://raw.githubusercontent.com/ivandfx/DFXTweaker/dfxtweakerweb/images/dfxlegacy1.11.0.png" style="width:100%">
+  <div class="text">DFX Tweaker Minimal 1.11.0 running on Windows 8.1</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 	</div>
 	<hr style="width:0px;">
 	<p>DFX Tweaker is a small but versatile tool designed to get system information and tweak your OS beyond what Microsoft allows you. As development progresses, new features will be added.</p>		
